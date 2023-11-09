@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html ng-app="gsmeter">
+<head>
+	<title>Insight GS Meter</title>
+	<link rel="Shortcut Icon" href="img/icon.ico" type="image/x-icon" />
+</head>
+<body ng-controller="MainController">
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-sm-offset-1 col-md-offset-1 col-xs-offset-1">
+
+		<!-- Image and POR -->
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 pic">
+					<img src="img/gsha.jpg" class="img-responsive "id="pic">
+				</div>
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 name">
+					<div class="row">
+						<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6 text-left">
+							<span id="text-2">OSAMA ADIL</span><br>
+							<span id="text-3">General Secretary Hostel Affairs</span><br>
+							<span id="text-3">3rd Year Integrated Chemistry</span><br>
+							<span id="text-3">Previously: Institute Secretary Hostel Affairs</span>
+						</div>
+						<div class="col-lg-3 col-sm-3 col-md-3 col-xs-3 icons">
+						<div id="adjust">
+							<div class="c100 p0">
+		                    <span>0%</span>
+		                    <div class="slice">
+		                        <div class="bar"></div>
+		                        <div class="fill"></div>
+		                    </div>
+		                   	</div>
+		                </div>
+                   			<div id="text-7">0 DAYS IN OFFICE</div>
+                   		</div>
+                   		<div class="col-lg-3 col-sm-3 col-md-3 col-xs-3 icons">
+                   		<div id="adjust">
+                   			<div class="c100 p0">
+		                    <span>0%</span>
+		                    <div class="slice">
+		                        <div class="bar"></div>
+		                        <div class="fill"></div>
+		                    </div>
+		                	</div>
+		                </div>
+		                	<div id="text-7">0 POINTS COVERED</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Work Report Color Codes -->
+			<div class="row code">
+				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-lg-offset-1 col-sm-offset-1 col-md-offset-1 ">
+					<div class="row">
+						<div class="col-lg-3 col-sm-3 col-md-3 col-xs-6">
+							<div id="completed"><div id="text-4">COMPLETED</div></div>
+						</div>
+						<div class="col-lg-3 col-sm-3 col-md-3 col-xs-6">
+							<div id="inprogress"><div id="text-4">IN PROGRESS</div></div>
+						</div>
+						<div class="col-lg-3 col-sm-3 col-md-3 col-xs-6">
+							<div id="notstartedyet"><div id="text-4">NOT STARTED YET</div></div>
+						</div>
+						<div class="col-lg-3 col-sm-3 col-md-3 col-xs-6">
+							<div id="broken"><div id="text-4">BROKEN</div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Manifesto Points -->
+			<div class="row manifesto" ng-controller="DataController as data">
+				<div ng-repeat="content5 in data.content5s">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="text-5">{{content5.name | uppercase}}</div>
+				<hr style="width:100%;color:#a2a2a2;">
+				<div ng-repeat="desc in content5.descriptions">						
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 pad" >
+						<div class="pull-right" id="nsy_text"></div>
+					</div>
+					<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 pad">
+						<div id="text-6">{{desc.point}}</div>
+					</div>
+					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+				</div>
+				</div>
+				</div>
+			</div>
+
+
+
+		</div>
+	</div>
+</div>
+</body>
+</html>
