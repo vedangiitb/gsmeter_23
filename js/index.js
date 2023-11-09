@@ -16,29 +16,32 @@
 	.config(['$routeProvider', function($routeProvider){
 	$routeProvider.
 	when('/',{
-		redirectTo: '/gs-cult'
+		templateUrl:'home.html',
+		controller: 'MainController'
 	}).
 	when('/gs-cult',{
 		templateUrl: 'gs-cult.html',
 		controller: 'MainController'
 	}).
 	when('/gs-sports',{
-		templateUrl: 'gs-sports.html'
+		templateUrl: 'gs-sports.html',
+		controller: 'MainController'
 	}).
 	when('/gsaa-ug',{
-		templateUrl: 'gsaa-ug.html'
+		templateUrl: 'gsaa-ug.html',
+		controller: 'MainController'
 	}).
 	when('/gsaa-pg',{
-		templateUrl: 'gsaa-pg.html'
+		templateUrl: 'gsaa-pg.html',
+		controller: 'MainController'
 	}).
 	when('/gsha',{
-		templateUrl: 'gsha.html'
-	}).
-	when('/stab',{
-		templateUrl: 'stab.html'
+		templateUrl: 'gsha.html',
+		controller: 'MainController'
 	}).
 	otherwise({
-		redirectTo: '/gs-cult'
+		templateUrl:'home.html',
+		controller: 'MainController'
 	});
 	}]);
 
