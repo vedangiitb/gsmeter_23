@@ -5,95 +5,289 @@
 	<link rel="Shortcut Icon" href="img/icon.ico" type="image/x-icon" />
 </head>
 <body ng-controller="MainController">
-
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-sm-offset-1 col-md-offset-1 col-xs-offset-1">
-
-		<!-- Image and POR -->
-			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 pic">
-					<img src="img/gsaa_ug.jpg" class="img-responsive "id="pic">
-				</div>
-				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 name">
-					<div class="row">
-						<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6 text-left">
-							<span id="text-2">ABHISHEK KHADIYA</span><br>
-							<span id="text-3">General Secretary Academic Affairs (UG)</span><br>
-							<span id="text-3">4th Year Mechanical Engineering</span><br>
-							<span id="text-3">Previously: Institute Secretary Academic Affairs</span>
-						</div>
-						<div class="col-lg-3 col-sm-3 col-md-3 col-xs-3 icons">
-						<div id="adjust">
-							<div class="c100 p0">
-		                    <span>0%</span>
-		                    <div class="slice">
-		                        <div class="bar"></div>
-		                        <div class="fill"></div>
-		                    </div>
-		                   	</div>
-		                </div>
-                   			<div id="text-7">0 DAYS IN OFFICE</div>
-                   		</div>
-                   		<div class="col-lg-3 col-sm-3 col-md-3 col-xs-3 icons">
-                   		<div id="adjust">
-                   			<div class="c100 p0">
-		                    <span>0%</span>
-		                    <div class="slice">
-		                        <div class="bar"></div>
-		                        <div class="fill"></div>
-		                    </div>
-		                	</div>
-		                </div>
-		                	<div id="text-7">0 POINTS COVERED</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		<!-- Work Report Color Codes -->
-			<div class="row code">
-				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-lg-offset-1 col-sm-offset-1 col-md-offset-1 ">
-					<div class="row">
-						<div class="col-lg-3 col-sm-3 col-md-3 col-xs-6">
-							<div id="completed"><div id="text-4">COMPLETED</div></div>
-						</div>
-						<div class="col-lg-3 col-sm-3 col-md-3 col-xs-6">
-							<div id="inprogress"><div id="text-4">IN PROGRESS</div></div>
-						</div>
-						<div class="col-lg-3 col-sm-3 col-md-3 col-xs-6">
-							<div id="notstartedyet"><div id="text-4">NOT STARTED YET</div></div>
-						</div>
-						<div class="col-lg-3 col-sm-3 col-md-3 col-xs-6">
-							<div id="broken"><div id="text-4">BROKEN</div></div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		<!-- Manifesto Points -->
-			<div class="row manifesto" ng-controller="DataController as data">
-				<div ng-repeat="content3 in data.content3s">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="text-5">{{content3.name | uppercase}}</div>
-				<hr style="width:100%;color:#a2a2a2;">
-				<div ng-repeat="desc in content3.descriptions">						
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 pad" >
-						<div class="pull-right" id="nsy_text"></div>
-					</div>
-					<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 pad">
-						<div id="text-6">{{desc.point}}</div>
-					</div>
-					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
-				</div>
-				</div>
-				</div>
-			</div>
-
-
-
+	
+	<div style="margin-left:260px;margin-top:40px;margin-right:30px;background-color:rgb(255, 255, 255);padding:20px 40px;min-height:708px;box-sizing:border-box;">
+		<div style="margin:0px;padding:0px;box-sizing:border-box;display:flex;flex-direction:row;justify-content:space-between;align-items:center;">
+			<h1 style="font-size:36px;margin:0px 0px 10px;padding:0px;box-sizing:border-box;margin-top:0px;margin-bottom:10px;font-weight:500;line-height:43.2px;font-family:Oswald, sans-serif;text-transform:uppercase;">Gsaa Meter</h1>
+			<p style="margin:0px 0px 10px;padding:0px;box-sizing:border-box;font-family:'Quattrocento Sans', sans-serif;font-size:20px;font-weight:600;margin-top:0px;margin-bottom:10px;">Last Updated: 20/01/2023</p>
 		</div>
+		<div style="margin:0px;padding:0px 0px 20px;box-sizing:border-box;display:flex;width: 100%;justify-content:space-between;align-items:center;flex-wrap:wrap;padding-bottom:20px;gap:10px;">
+			<div style="margin:0px;padding:0px;box-sizing:border-box;background-color:rgb(251, 247, 244);border:0.8px solid rgb(197, 193, 189);min-height:200px;max-width:600px;display:flex;flex-flow:row wrap;align-self:flex-start;"><img src="/aayush.png" alt="" style="margin:0px;padding:20px;box-sizing:border-box;height:200px;vertical-align:middle;" />
+				<div style="margin:0px;padding:20px;box-sizing:border-box;position:relative;">
+					<p style="margin:0px 0px 10px;padding:0px;box-sizing:border-box;margin-top:0px;margin-bottom:10px;"><span style="margin:0px;padding:0px;box-sizing:border-box;display:block;font-size:23px;font-weight:700;text-transform:uppercase;font-family:oswald, sans-serif;">Ayush Ambadas Dahale</span><span style="margin:0px;padding:0px;box-sizing:border-box;color:rgb(0, 0, 0);font-size:20px;font-family:oswald, sans-serif;">General Secretary Academic Affairs UG</span></p><a href="https://drive.google.com/file/d/1tr7XhEAyIDQvOYcxb-bxrhfzscsNzsl8/view?usp=sharing" style="margin:0px;padding:0px;box-sizing:border-box;color:rgb(0, 0, 0);display:inline-block;text-align:end;font-family:'Quattrocento Sans', sans-serif;font-size:18px;font-weight:600;text-decoration:underline solid rgb(0, 0, 0);">View Manifesto <i style="margin:0px;padding:0px;box-sizing:border-box;"></i></a>
+				</div>
+			</div>
+			<div style="width: 200px;margin:0px;padding:0px;box-sizing:border-box;"><svg viewBox="0 0 100 100" width="100%" height="100%" style="margin:0px;padding:0px;box-sizing:border-box;vertical-align:middle;">
+					<path d="M 87.5 50 A 37.5 37.5 0 0 1 41.6357765896659 86.55529738275999" fill="none" stroke-width="25" stroke-dasharray="67.34003852969722" stroke-dashoffset="0" stroke="#FF470C" style="transition: stroke-dashoffset 500ms ease-out 0s;margin:0px;padding:0px;box-sizing:border-box;">
+						<title style="margin:0px;padding:0px;box-sizing:border-box;">Not Yet Started</title>
+					</path>
+					<path d="M 41.6357765896659 86.55529738275999 A 37.5 37.5 0 0 1 55.0504246061432 12.841646816662298" fill="none" stroke-width="25" stroke-dasharray="114.4403663886422" stroke-dashoffset="0" stroke="#FFCC66" style="transition: stroke-dashoffset 500ms ease-out 0s;margin:0px;padding:0px;box-sizing:border-box;">
+						<title style="margin:0px;padding:0px;box-sizing:border-box;">Ongoing</title>
+					</path>
+					<path d="M 55.0504246061432 12.841646816662298 A 37.5 37.5 0 0 1 87.5 49.99999999999999" fill="none" stroke-width="25" stroke-dasharray="53.83904410089509" stroke-dashoffset="0" stroke="#2BC48A" style="transition: stroke-dashoffset 500ms ease-out 0s;margin:0px;padding:0px;box-sizing:border-box;">
+						<title style="margin:0px;padding:0px;box-sizing:border-box;">Completed</title>
+					</path>
+					<path d="" fill="none" stroke-width="25" stroke-dasharray="0" stroke-dashoffset="0" stroke="#0073c2" style="transition: stroke-dashoffset 500ms ease-out 0s;margin:0px;padding:0px;box-sizing:border-box;">
+						<title style="margin:0px;padding:0px;box-sizing:border-box;">Incomplete</title>
+					</path><text dominant-baseline="central" x="50" y="50" dx="23.37297180626023" dy="29.324975514802468" text-anchor="middle" style="font-size: 0.8rem; font-family: &quot;Quattrocento Sans&quot;; font-weight: bold;font-family:'Quattrocento Sans';font-weight:700;margin:0px;padding:0px;box-sizing:border-box;">28.58%</text><text dominant-baseline="central" x="50" y="50" dx="-36.89404946022939" dy="-6.71409818413073" text-anchor="middle" style="font-size: 0.8rem; font-family: &quot;Quattrocento Sans&quot;; font-weight: bold;font-family:'Quattrocento Sans';font-weight:700;margin:0px;padding:0px;box-sizing:border-box;">48.57%</text><text dominant-baseline="central" x="50" y="50" dx="28.245715805502" dy="-24.66636452002635" text-anchor="middle" style="font-size: 0.8rem; font-family: &quot;Quattrocento Sans&quot;; font-weight: bold;font-family:'Quattrocento Sans';font-weight:700;margin:0px;padding:0px;box-sizing:border-box;">22.85%</text>
+				</svg></div>
+		</div>
+		<div style="display:flex;font-size:16px;font-weight:600;gap:10px;padding:5px;flex-wrap:wrap;background-color:rgb(251, 247, 244);margin-bottom:10px;margin:0px 0px 10px;box-sizing:border-box;"><span style="margin:0px;padding:0px;box-sizing:border-box;"><i style="color:rgb(43, 196, 138);font-size:20px;margin:0px;padding:0px;box-sizing:border-box;"></i> Completed</span><span style="margin:0px;padding:0px;box-sizing:border-box;"><i style="color:rgb(255, 204, 102);font-size:20px;margin:0px;padding:0px;box-sizing:border-box;"></i> Ongoing</span><span style="margin:0px;padding:0px;box-sizing:border-box;"><i style="color:rgb(255, 71, 12);font-size:20px;margin:0px;padding:0px;box-sizing:border-box;"></i> Not Yet Started</span><span style="margin:0px;padding:0px;box-sizing:border-box;"><i style="color:rgb(0, 115, 194);font-size:20px;margin:0px;padding:0px;box-sizing:border-box;"></i> Unclear</span></div>
+		<p style="margin:0px;padding:0px;box-sizing:border-box;margin-top:0px;margin-bottom:0px;font-family:Oswald, sans-serif;font-size:28px;font-weight:600;display:inline-block;">Key Initiatives</p>
+		<ul style="margin:0px 0px 10px;padding:0px 0px 0px 20px;box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding-left:20px;font-family:'Quattrocento Sans', sans-serif;list-style:outside none none;font-size:20px;font-weight:600;">
+			<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(43, 196, 138);margin:0px;box-sizing:border-box;"></i>
+				<div style="margin:0px;padding:0px;box-sizing:border-box;"> Propose a <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;">multistage adjustment period</strong>, consisting of 1 week for course registration adjustment and 3 weeks for course drop adjustment period </div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Propose an addition of a Minor program in Quantum Technology as a part of ug cur riculum comprising courses of Electrical, Physics and Computer Science department.</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">policy side is done, will be approved and implemented by 3rd sem of freshies</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Organise an Industrial Symposium in collaboration with the IIT Bombay Research Park as an avenue for students to network with and explore Industries </div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">research park has approved, funding will be from them and dean R&amp;D, only dates are to be finalised keeping E-Summit and sarcasm in mind</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Propose an undergraduate research award URA01 (pre-final year undergraduate re search) and URA02 (BS Project research) for students enrolled in B.S. programmes </div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">ongoing</div>
+			</div>
+			<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(43, 196, 138);margin:0px;box-sizing:border-box;"></i>
+				<div style="margin:0px;padding:0px;box-sizing:border-box;">Conduct an immersion program with SMP to aid incoming sophomores get acquainted to the campus and the new challenges of offline mode of academics for smoother transition </div>
+			</div>
+		</ul>
+		<p style="margin:0px;padding:0px;box-sizing:border-box;margin-top:0px;margin-bottom:0px;font-family:Oswald, sans-serif;font-size:28px;font-weight:600;display:inline-block;">INFORMATION DISSEMINATION AND AWARENESS </p>
+		<ul style="margin:0px 0px 10px;padding:0px 0px 0px 20px;box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding-left:20px;font-family:'Quattrocento Sans', sans-serif;list-style:outside none none;font-size:20px;font-weight:600;">
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 71, 12);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Start a bi-monthly blog with updates on policy, proposal updates and council activities</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">will be part of website which will be released by end of tenure</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 71, 12);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Conduct awareness drives regarding opportunities, courses and resources provided by the 30+ academic and research centres at IITB, to be hosted on External Portal on Insti App</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">website issues</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 71, 12);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Develop a research portal to serve as a one stop for all research related activities by hosting student research profiles, and application portals for SURP, iSURP and CORE </div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">website issues</div>
+			</div>
+		</ul>
+		<p style="margin:0px;padding:0px;box-sizing:border-box;margin-top:0px;margin-bottom:0px;font-family:Oswald, sans-serif;font-size:28px;font-weight:600;display:inline-block;">ACADEMIC AND POLICY REFORMS </p>
+		<ul style="margin:0px 0px 10px;padding:0px 0px 0px 20px;box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding-left:20px;font-family:'Quattrocento Sans', sans-serif;list-style:outside none none;font-size:20px;font-weight:600;">
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Push for creating department wise list of approved NPTEL and CDEEP courses for crediting, to be decided and updated by DUGC every semester.</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">ongoing, approved by SC/ST cell facads and DDAIA, will be proposed in UGPC (end of dec 2022) and then needs to be approved by senate</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Implement the policy for including fourth-year dual degree students in the internship season with the Placement and Training Cell</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">ongoing, waiting for approval from each department with DD programmes,might not be relevant since most depts are discontinuing DD programmes</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 71, 12);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Push for formalising Course Coordination Committee to ensure uniformity in course content, evaluation scheme and grading policies across different sections for a course</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">working on policies related to grading system, this issue will be taken up after that</div>
+			</div>
+			<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(43, 196, 138);margin:0px;box-sizing:border-box;"></i>
+				<div style="margin:0px;padding:0px;box-sizing:border-box;">Follow up on Ease of Access Cell to better campus life for the differently-abled students</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Follow up on the integration of Institute Exit Survey as a part of no dues process to act as a feedback mechanism for graduating students. </div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">survey has been created, has not been integrated yet</div>
+			</div>
+			<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(43, 196, 138);margin:0px;box-sizing:border-box;"></i>
+				<div style="margin:0px;padding:0px;box-sizing:border-box;">Push for improving FacAd-student interaction by mandating FacAd orientation</div>
+			</div>
+		</ul>
+		<p style="margin:0px;padding:0px;box-sizing:border-box;margin-top:0px;margin-bottom:0px;font-family:Oswald, sans-serif;font-size:28px;font-weight:600;display:inline-block;">Web and Infrastructure</p>
+		<ul style="margin:0px 0px 10px;padding:0px 0px 0px 20px;box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding-left:20px;font-family:'Quattrocento Sans', sans-serif;list-style:outside none none;font-size:20px;font-weight:600;">
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 71, 12);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;"> Reinstate the UGAC Website to centralise all web content and portals</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">website will be done by end of tenure</div>
+			</div>
+			<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(43, 196, 138);margin:0px;box-sizing:border-box;"></i>
+				<div style="margin:0px;padding:0px;box-sizing:border-box;">Follow up on expanding the utility of AMS portal by increasing functionality across administrative units by including forms for URA applications, transcripts, bonafide, etc</div>
+			</div>
+		</ul>
+		<p style="margin:0px;padding:0px;box-sizing:border-box;margin-top:0px;margin-bottom:0px;font-family:Oswald, sans-serif;font-size:28px;font-weight:600;display:inline-block;">PROMOTION OF WORK EXPERIENCE AND RESEARCH</p>
+		<ul style="margin:0px 0px 10px;padding:0px 0px 0px 20px;box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding-left:20px;font-family:'Quattrocento Sans', sans-serif;list-style:outside none none;font-size:20px;font-weight:600;">
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Propose crediting of research work in student tech teams as SLPs/RnD Projects</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">had sent a proposal with GSTA in June-July but got rejected because it needed to be more robust wrt grading and ensuring quality of work,will probably send revised proposal in next UG/PGPC in Jan-end</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Collaboration for Industrial and Research activities with IIT Bombay Research Park <br style="margin:0px;padding:0px;box-sizing:border-box;" /> Conduct orientation and outreach programme of IIT Bombay Research Park <br style="margin:0px;padding:0px;box-sizing:border-box;" /> Provide students with industrial exposure, funding, and mentorship <br style="margin:0px;padding:0px;box-sizing:border-box;" /> Organise ReCon (UG student Research Convention) as a platform to showcase research</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">clubbed with the industrial symposium</div>
+			</div>
+			<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(43, 196, 138);margin:0px;box-sizing:border-box;"></i>
+				<div style="margin:0px;padding:0px;box-sizing:border-box;">Push for curriculum-oriented research exposure (CORE) program to provide sophomore students with more curriculum aligned research opportunities</div>
+			</div>
+		</ul>
+		<p style="margin:0px;padding:0px;box-sizing:border-box;margin-top:0px;margin-bottom:0px;font-family:Oswald, sans-serif;font-size:28px;font-weight:600;display:inline-block;">CAREER CELL</p>
+		<ul style="margin:0px 0px 10px;padding:0px 0px 0px 20px;box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding-left:20px;font-family:'Quattrocento Sans', sans-serif;list-style:outside none none;font-size:20px;font-weight:600;">
+			<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(43, 196, 138);margin:0px;box-sizing:border-box;"></i>
+				<div style="margin:0px;padding:0px;box-sizing:border-box;">Adopt <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;"> Capstone Course Methodology</strong> for Learners’ Space providing the students with the opportunity to use the knowledge they have gained through the course</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Formalise a Gradmentorship Program to guide prospective grad school applicants through the application process and conduct seminars for information dissemination </div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">mentoship programme didnt fit timeline so released GRAD booklet instead with details of people who got into different unis</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Organize a <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;"> Public Policy</strong> Conclave in collaboration with think-tanks, to provide hands on exposure to the students interested in exploring the domain </div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">planning in feb as a consult+policy thing, progs and dgsec of CPS are interested</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Introduce <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;"> Internship Bluebook</strong> comprising company and profile details along with relevant preparation resources and experience</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">compiled but will be released towards end of tenure so as to help in next intern season</div>
+			</div>
+		</ul>
+		<p style="margin:0px;padding:0px;box-sizing:border-box;margin-top:0px;margin-bottom:0px;font-family:Oswald, sans-serif;font-size:28px;font-weight:600;display:inline-block;">STUDENT SUPPORT SERVICES</p>
+		<ul style="margin:0px 0px 10px;padding:0px 0px 0px 20px;box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding-left:20px;font-family:'Quattrocento Sans', sans-serif;list-style:outside none none;font-size:20px;font-weight:600;">
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 71, 12);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Introduce an <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;"> academic blog</strong> to streamline retagging, registration and scholarship queries</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">website issues</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 71, 12);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;"> Introduce <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;"> TSC Central</strong> on the UGAC Website to host TSC recordings and other resources </div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">resobin cant hold recordings, so textual resources have been added there so far, proper TSC central will be made with website</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 71, 12);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Introduce a portal to centralise resources and information about non-institute scholarships and professional opportunities to aid students in applying for the same</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">No reply given yet</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Push for hiring of <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;"> ARP TAs </strong> across all departments in coordination with D-AMP teams </div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">coordinating with ARP coordinators of each dept and Prof Belur of SC/ST cell</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;"> Reinstate a centralised TA portal and implement TA feedback for improved accountability.</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">testing portal with profs also almost complete, selections of next set of TAs should hopefully be through this but a little prof dependent as some prefer google forms</div>
+			</div>
+		</ul>
+		<p style="margin:0px;padding:0px;box-sizing:border-box;margin-top:0px;margin-bottom:0px;font-family:Oswald, sans-serif;font-size:28px;font-weight:600;display:inline-block;">CLUBS</p>
+		<ul style="margin:0px 0px 10px;padding:0px 0px 0px 20px;box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding-left:20px;font-family:'Quattrocento Sans', sans-serif;list-style:outside none none;font-size:20px;font-weight:600;">
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 71, 12);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Introduce a <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;"> Supply Chain &amp; Operations</strong> wing under Analytics club in coordination with EnPoWER to foster discussions and community building for interested students</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">scheduled an event with HUL to launch in october but they cancelled, has been on hold since then</div>
+			</div>
+			<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(43, 196, 138);margin:0px;box-sizing:border-box;"></i>
+				<div style="margin:0px;padding:0px;box-sizing:border-box;">Restructure the <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;"> Consult Core Group</strong> and start taking pro-bono cases from startups</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 71, 12);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Introduce a comprehensive course on <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;"> Personal Finance</strong> under the Finance Club</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">awaiting details</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Repurpose the DAV Team to quantify student engagement with institute clubs and bodies</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">did not get a lot of data about engagement with clubs so pivoted to covid data to see how it affected grades, attendance etc, (got anon data from asc), will publish report by end of tenure and some details in midterm report</div>
+			</div>
+		</ul>
+		<p style="margin:0px;padding:0px;box-sizing:border-box;margin-top:0px;margin-bottom:0px;font-family:Oswald, sans-serif;font-size:28px;font-weight:600;display:inline-block;">EXTERNAL RELATIONS </p>
+		<ul style="margin:0px 0px 10px;padding:0px 0px 0px 20px;box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding-left:20px;font-family:'Quattrocento Sans', sans-serif;list-style:outside none none;font-size:20px;font-weight:600;">
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Introduce <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;"> Swagat</strong>, an Orientation programme for inbound semester exchange students </div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">will be implemented this time, wasn't done last time as ISIR was appointed very late</div>
+			</div>
+			<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(43, 196, 138);margin:0px;box-sizing:border-box;"></i>
+				<div style="margin:0px;padding:0px;box-sizing:border-box;"> Organise sessions on scholarships and financing for students applying for higher studies </div>
+			</div>
+		</ul>
 	</div>
-</div>
+
 </body>
 </html>
