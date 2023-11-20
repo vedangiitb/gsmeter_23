@@ -6,95 +6,197 @@
 </head>
 <body ng-controller="MainController">
 
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-sm-offset-1 col-md-offset-1 col-xs-offset-1">
-
-		<!-- Image and POR -->
-			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 pic">
-					<img src="img/gsaa_pg.jpg" class="img-responsive "id="pic">
-				</div>
-				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 name">
-					<div class="row">
-						<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6 text-left">
-							<span id="text-2">PANKAJ SHARMA</span><br>
-					<span id="text-3">General Secretary Academic Affairs (PG)</span><br>
-							<span id="text-3">4th Year Mechanical Engineering</span><br>
-							<span id="text-3">Previously: Institute Secretary Academic Affairs</span>
-						</div>
-						<div class="col-lg-3 col-sm-3 col-md-3 col-xs-3 icons">
-						<div id="adjust">
-							<div class="c100 p0">
-		                    <span>0%</span>
-		                    <div class="slice">
-		                        <div class="bar"></div>
-		                        <div class="fill"></div>
-		                    </div>
-		                   	</div>
-		                </div>
-                   			<div id="text-7">163 DAYS IN OFFICE</div>
-                   		</div>
-                   		<div class="col-lg-3 col-sm-3 col-md-3 col-xs-3 icons">
-                   		<div id="adjust">
-                   			<div class="c100 p0">
-		                    <span>0%</span>
-		                    <div class="slice">
-		                        <div class="bar"></div>
-		                        <div class="fill"></div>
-		                    </div>
-		                	</div>
-		                </div>
-		                	<div id="text-7">0 POINTS COVERED</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		<!-- Work Report Color Codes -->
-			<div class="row code">
-				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-lg-offset-1 col-sm-offset-1 col-md-offset-1 ">
-					<div class="row">
-						<div class="col-lg-3 col-sm-3 col-md-3 col-xs-6">
-							<div id="completed"><div id="text-4">COMPLETED</div></div>
-						</div>
-						<div class="col-lg-3 col-sm-3 col-md-3 col-xs-6">
-							<div id="inprogress"><div id="text-4">IN PROGRESS</div></div>
-						</div>
-						<div class="col-lg-3 col-sm-3 col-md-3 col-xs-6">
-							<div id="notstartedyet"><div id="text-4">NOT STARTED YET</div></div>
-						</div>
-						<div class="col-lg-3 col-sm-3 col-md-3 col-xs-6">
-							<div id="broken"><div id="text-4">BROKEN</div></div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		<!-- Manifesto Points -->
-			<div class="row manifesto" ng-controller="DataController as data">
-				<div ng-repeat="content4 in data.content4s">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="text-5">{{content4.name | uppercase}}</div>
-				<hr style="width:100%;color:#a2a2a2;">
-				<div ng-repeat="desc in content4.descriptions">						
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 pad" >
-						<div class="pull-right" id="nsy_text"></div>
-					</div>
-					<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 pad">
-						<div id="text-6">{{desc.point}}</div>
-					</div>
-					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
-				</div>
-				</div>
-				</div>
-			</div>
-
-
-
+	<div style="margin-left:260px;margin-top:40px;margin-right:30px;background-color:rgb(255, 255, 255);padding:20px 40px;min-height:708px;box-sizing:border-box;">
+		<div style="margin:0px;padding:0px;box-sizing:border-box;display:flex;flex-direction:row;justify-content:space-between;align-items:center;">
+			<h1 style="font-size:36px;margin:0px 0px 10px;padding:0px;box-sizing:border-box;margin-top:0px;margin-bottom:10px;font-weight:500;line-height:43.2px;font-family:Oswald, sans-serif;text-transform:uppercase;">Gsaa Meter</h1>
+			<p style="margin:0px 0px 10px;padding:0px;box-sizing:border-box;font-family:'Quattrocento Sans', sans-serif;font-size:20px;font-weight:600;margin-top:0px;margin-bottom:10px;">Last Updated: 23/01/2023</p>
 		</div>
+		<div style="margin:0px;padding:0px 0px 20px;box-sizing:border-box;display:flex;width: 100%;justify-content:space-between;align-items:center;flex-wrap:wrap;padding-bottom:20px;gap:10px;">
+			<div style="margin:0px;padding:0px;box-sizing:border-box;background-color:rgb(251, 247, 244);border:0.8px solid rgb(197, 193, 189);min-height:200px;max-width:600px;display:flex;flex-flow:row wrap;align-self:flex-start;"><img src="/vishaka.png" alt="" style="margin:0px;padding:20px;box-sizing:border-box;height:200px;vertical-align:middle;" />
+				<div style="margin:0px;padding:20px;box-sizing:border-box;position:relative;">
+					<p style="margin:0px 0px 10px;padding:0px;box-sizing:border-box;margin-top:0px;margin-bottom:10px;"><span style="margin:0px;padding:0px;box-sizing:border-box;display:block;font-size:23px;font-weight:700;text-transform:uppercase;font-family:oswald, sans-serif;">Vishakha</span><span style="margin:0px;padding:0px;box-sizing:border-box;color:rgb(0, 0, 0);font-size:20px;font-family:oswald, sans-serif;">General Secretary Academic Affairs PG</span></p><a href="https://drive.google.com/file/d/1k8lNyKtkizbJnZwXB33KPepvw_pbP-N7/view?usp=sharing" style="margin:0px;padding:0px;box-sizing:border-box;color:rgb(0, 0, 0);display:inline-block;text-align:end;font-family:'Quattrocento Sans', sans-serif;font-size:18px;font-weight:600;text-decoration:underline solid rgb(0, 0, 0);">View Manifesto <i style="margin:0px;padding:0px;box-sizing:border-box;"></i></a>
+				</div>
+			</div>
+			<div style="width: 200px;margin:0px;padding:0px;box-sizing:border-box;"><svg viewBox="0 0 100 100" width="100%" height="100%" style="margin:0px;padding:0px;box-sizing:border-box;vertical-align:middle;">
+					<path d="M 87.5 50 A 37.5 37.5 0 0 1 37.519267080388005 85.36214509598241" fill="none" stroke-width="25" stroke-dasharray="71.62831250184729" stroke-dashoffset="0" stroke="#FF470C" style="transition: stroke-dashoffset 500ms ease-out 0s;margin:0px;padding:0px;box-sizing:border-box;">
+						<title style="margin:0px;padding:0px;box-sizing:border-box;">Not Yet Started</title>
+					</path>
+					<path d="M 37.519267080388005 85.36214509598241 A 37.5 37.5 0 0 1 37.51926708038799 14.637854904017587" fill="none" stroke-width="25" stroke-dasharray="92.36282401553993" stroke-dashoffset="0" stroke="#FFCC66" style="transition: stroke-dashoffset 500ms ease-out 0s;margin:0px;padding:0px;box-sizing:border-box;">
+						<title style="margin:0px;padding:0px;box-sizing:border-box;">Ongoing</title>
+					</path>
+					<path d="M 37.51926708038799 14.637854904017587 A 37.5 37.5 0 0 1 87.5 49.99999999999999" fill="none" stroke-width="25" stroke-dasharray="71.62831250184729" stroke-dashoffset="0" stroke="#2BC48A" style="transition: stroke-dashoffset 500ms ease-out 0s;margin:0px;padding:0px;box-sizing:border-box;">
+						<title style="margin:0px;padding:0px;box-sizing:border-box;">Completed</title>
+					</path>
+					<path d="" fill="none" stroke-width="25" stroke-dasharray="0" stroke-dashoffset="0" stroke="#0073c2" style="transition: stroke-dashoffset 500ms ease-out 0s;margin:0px;padding:0px;box-sizing:border-box;">
+						<title style="margin:0px;padding:0px;box-sizing:border-box;">Incomplete</title>
+					</path><text dominant-baseline="central" x="50" y="50" dx="21.658976378335037" dy="30.612721901894396" text-anchor="middle" style="font-size: 0.8rem; font-family: &quot;Quattrocento Sans&quot;; font-weight: bold;font-family:'Quattrocento Sans';font-weight:700;margin:0px;padding:0px;box-sizing:border-box;">30.4%</text><text dominant-baseline="central" x="50" y="50" dx="-37.5" dy="4.592425496802574e-15" text-anchor="middle" style="font-size: 0.8rem; font-family: &quot;Quattrocento Sans&quot;; font-weight: bold;font-family:'Quattrocento Sans';font-weight:700;margin:0px;padding:0px;box-sizing:border-box;">39.2%</text><text dominant-baseline="central" x="50" y="50" dx="21.658976378335023" dy="-30.612721901894407" text-anchor="middle" style="font-size: 0.8rem; font-family: &quot;Quattrocento Sans&quot;; font-weight: bold;font-family:'Quattrocento Sans';font-weight:700;margin:0px;padding:0px;box-sizing:border-box;">30.4%</text>
+				</svg></div>
+		</div>
+		<div style="display:flex;font-size:16px;font-weight:600;gap:10px;padding:5px;flex-wrap:wrap;background-color:rgb(251, 247, 244);margin-bottom:10px;margin:0px 0px 10px;box-sizing:border-box;"><span style="margin:0px;padding:0px;box-sizing:border-box;"><i style="color:rgb(43, 196, 138);font-size:20px;margin:0px;padding:0px;box-sizing:border-box;"></i> Completed</span><span style="margin:0px;padding:0px;box-sizing:border-box;"><i style="color:rgb(255, 204, 102);font-size:20px;margin:0px;padding:0px;box-sizing:border-box;"></i> Ongoing</span><span style="margin:0px;padding:0px;box-sizing:border-box;"><i style="color:rgb(255, 71, 12);font-size:20px;margin:0px;padding:0px;box-sizing:border-box;"></i> Not Yet Started</span><span style="margin:0px;padding:0px;box-sizing:border-box;"><i style="color:rgb(0, 115, 194);font-size:20px;margin:0px;padding:0px;box-sizing:border-box;"></i> Unclear</span></div>
+		<p style="margin:0px;padding:0px;box-sizing:border-box;margin-top:0px;margin-bottom:0px;font-family:Oswald, sans-serif;font-size:28px;font-weight:600;display:inline-block;">Skill Development</p>
+		<ul style="margin:0px 0px 10px;padding:0px 0px 0px 20px;box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding-left:20px;font-family:'Quattrocento Sans', sans-serif;list-style:outside none none;font-size:20px;font-weight:600;">
+			<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(43, 196, 138);margin:0px;box-sizing:border-box;"></i>
+				<div style="margin:0px;padding:0px;box-sizing:border-box;">Provide awareness camps for noncore company aspirants and provide <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;">industry</strong> specific <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;">placement training</strong> for core company aspirants in coordination with the Placement Cell</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 71, 12);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">In collaboration with SARC, build a strong technical skill development mentorship program for PG students</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">No reply given yet</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Increase the frequency of <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;">writing and communication skill</strong> workshops and organize <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;">problem solving skills workshops</strong> to train students on how to approach problems related to their research topics using programming, in each department</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">The sessions were conducted to improve such skills but not using programming</div>
+			</div>
+		</ul>
+		<p style="margin:0px;padding:0px;box-sizing:border-box;margin-top:0px;margin-bottom:0px;font-family:Oswald, sans-serif;font-size:28px;font-weight:600;display:inline-block;">Academics/R&amp;D</p>
+		<ul style="margin:0px 0px 10px;padding:0px 0px 0px 20px;box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding-left:20px;font-family:'Quattrocento Sans', sans-serif;list-style:outside none none;font-size:20px;font-weight:600;">
+			<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(43, 196, 138);margin:0px;box-sizing:border-box;"></i>
+				<div style="margin:0px;padding:0px;box-sizing:border-box;">Introduce an academic help program for first-year PhD students who need guidance</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 71, 12);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Push the departments to appoint lab assistants to handle certain instruments for better time management and efficiency</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">No reply given yet</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Establish a CPI-based qualifiers across all the departments</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">Most of the departments have CPI based qualifiers. Earth sciences department's HOD came with the proposal to introduce qualifiers based on written test, which was then questioned (GSAA and IDR involved) and turned down by the PGPC. We, DGsec and IRSCP propsed CPI based qualifiers in mechanical which was turned down in the DPGC by the faculties (voting was used to come to this conclusion). </div>
+			</div>
+			<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(43, 196, 138);margin:0px;box-sizing:border-box;"></i>
+				<div style="margin:0px;padding:0px;box-sizing:border-box;">Push the departments to increase the minor courses being offered for masters and provide guidance for Master's in the first year on how to select minor courses</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 71, 12);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Explore the possibility of introducing minor degree to PhD students</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;"> (Many complications were there) Instead we purposed M.tech./M.sc. degree to those students who directly joined after B.Tech and this initiative is accepted in the PGPC and documentation on its implementation is in progress. </div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Continue the efforts of current council to increase the <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;">funding for conference travels</strong> for Master/PhD students and improve listing of upcoming conferences in the country and abroad</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">The proposal was discussed with Dean AP and Adean AP and was forwarded to DD FEA for further investigation. DD FEA agreed and will discuss it in the next BOG meeting.</div>
+			</div>
+			<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(43, 196, 138);margin:0px;box-sizing:border-box;"></i>
+				<div style="margin:0px;padding:0px;box-sizing:border-box;">In collaboration with International Relations office, conduct sessions on the research <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;">internship</strong> opportunities for PG students and familiarize the students on how to choose and apply for them</div>
+			</div>
+			<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(43, 196, 138);margin:0px;box-sizing:border-box;"></i>
+				<div style="margin:0px;padding:0px;box-sizing:border-box;">Carry forward the initiative to form a <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;">clear and effective internship policy</strong> for M.Tech. students in collaboration with all stakeholders</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 71, 12);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Improve the facilities for research by increasing the number of HPCs, anechoic chamber, etc</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">No reply given yet</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 71, 12);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Push for Institute level MOUs with local government colleges for the PMRF students to fulfill external TA requirement and provide a channel to connect with local colleges</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">Instead a better option like choosing NPTEL for online learning was discussed and accepted by IIT-M. Earlier this initiative was only for IIT-M students, which was then expanded to all the PMRF grating institutes after our discussion. </div>
+			</div>
+		</ul>
+		<p style="margin:0px;padding:0px;box-sizing:border-box;margin-top:0px;margin-bottom:0px;font-family:Oswald, sans-serif;font-size:28px;font-weight:600;display:inline-block;">Fellowships</p>
+		<ul style="margin:0px 0px 10px;padding:0px 0px 0px 20px;box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding-left:20px;font-family:'Quattrocento Sans', sans-serif;list-style:outside none none;font-size:20px;font-weight:600;">
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 71, 12);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Push for a merit-based <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;">TA allocation policy</strong> for Instruments/Laboratory TAs</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">No reply given yet</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Push for the formation of clear policies to award TA certificates as part of graduation transcript</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">This has been proposed and discussed with Dean AP, and sent it to departments for implementation. Some departments have implemented it and provide TA certificated, attested by HOD. </div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Continue the efforts of current council in solving the issues related to CSIR fellowship disbursement from the institute side</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">While major issues have been tackled some of them are still under progress.</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Continue the efforts of the current council for demanding extension <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;">of fellowship</strong> for all students as a compensation for the time lost due to COVID-19 shut down</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">Has been discussed with Director. Referred to DD FEA, and discussion is in progress</div>
+			</div>
+		</ul>
+		<p style="margin:0px;padding:0px;box-sizing:border-box;margin-top:0px;margin-bottom:0px;font-family:Oswald, sans-serif;font-size:28px;font-weight:600;display:inline-block;">Events</p>
+		<ul style="margin:0px 0px 10px;padding:0px 0px 0px 20px;box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding-left:20px;font-family:'Quattrocento Sans', sans-serif;list-style:outside none none;font-size:20px;font-weight:600;">
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Take initiative to conduct a PG level fresher’s get-together to welcome the newcomers and promote interaction between different batches</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">Several department's AURAA conducted this event. However due to the lack of senior PG student's time, it wasn't as successful as expected.</div>
+			</div>
+			<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(43, 196, 138);margin:0px;box-sizing:border-box;"></i>
+				<div style="margin:0px;padding:0px;box-sizing:border-box;">In collaboration with SARC, increase the frequency of department specific sessions by PhD <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;">alumni on</strong> career <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;">options after</strong> PhD</div>
+			</div>
+			<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(43, 196, 138);margin:0px;box-sizing:border-box;"></i>
+				<div style="margin:0px;padding:0px;box-sizing:border-box;">Publicise <strong style="font-family:Oswald, sans-serif;margin:0px;padding:0px;box-sizing:border-box;font-weight:900;">‘Pop the question’</strong> - a discussion forum on MS-Teams, by PGAC</div>
+			</div>
+		</ul>
+		<p style="margin:0px;padding:0px;box-sizing:border-box;margin-top:0px;margin-bottom:0px;font-family:Oswald, sans-serif;font-size:28px;font-weight:600;display:inline-block;">Mental Health</p>
+		<ul style="margin:0px 0px 10px;padding:0px 0px 0px 20px;box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding-left:20px;font-family:'Quattrocento Sans', sans-serif;list-style:outside none none;font-size:20px;font-weight:600;">
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 71, 12);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Conduct mental health awareness sessions in collaboration with Student Wellness Center</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">No reply given yet</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Organize "Buddy talk" - a series of informal get-togethers for better interaction among peers.</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">Several department's AURAA conducted this event. However due to the lack of senior PG student's time, it wasn't as successful as expected.</div>
+			</div>
+			<div style="margin:0px;padding:0px;box-sizing:border-box;">
+				<div style="cursor:pointer;margin:0px;padding:0px;box-sizing:border-box;">
+					<div style="display:flex;gap:7px;margin:0px;padding:0px;box-sizing:border-box;"><i style="padding-top:2px;font-size:22px;color:rgb(255, 204, 102);margin:0px;box-sizing:border-box;"></i>
+						<div style="margin:0px;padding:0px;box-sizing:border-box;">Carry forward the work of establishing PhD lounge in each department</div>
+					</div>
+				</div>
+				<div style="display:none;padding:10px 10px 10px 30px;background-color:rgb(251, 247, 244);font-family:Lato, sans-serif;font-size:16px;font-weight:600;border-radius:3px;transition:all 0.5s ease 0s;margin:0px;box-sizing:border-box;">We succesfully got Aerospace's Ph.D. Lounge.</div>
+			</div>
+		</ul>
 	</div>
-
-</div>
 </body>
 </html>
